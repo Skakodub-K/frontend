@@ -1,138 +1,262 @@
 .container {
-    background: #FFFFFF;
-    color: #000000;
-    width: 900px;
-    height: 600px;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 37px;
-    /* position: absolute;
-    top: 25%;
-    left: 25%;
-    margin: 0px; */
-    box-sizing: border-box;
-}
-
-.userName {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    margin: 0;
-    font-size: 37px;
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  width: 60vw;
+  height: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .closeButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
 }
-
 .selector {
-    background: #ECF2F9;
-    color: #353535;
-    text-align: center;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 10px;
-    width: 100%;
-    margin: 0 0 20px 0; 
+  background: #ecf2f9;
+  text-align: center;
+  border: none;
+  border-radius: 20px 20px 0px 0px;
+  font-size: 2.57vw;
+  padding: 10px;
+  width: 55vw;
+  margin: 2vw 0px 0px;
 }
 
 .description {
-    background: #ECF2F9;
-    color: #353535;
-    text-align: justify;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 10px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-hr {
-    background-color: #000000;
-    color: #000000;
-    border-color: #000000;
-    margin: 60px 0 20px 0;
-}
-
-.input:focus, .input:active, .selector:focus, .selector:active {
-    border: none;
-    outline: none;
+  background: #ecf2f9;
+  color: #353535;
+  width: 55vw;
+  text-align: justify;
+  font-size: 2vw;
+  padding: 15px;
+  height: 33vw;
+  border-radius: 0px 0px 20px 20px;
+  overflow-y: scroll;
 }
 
 .progress {
-    background: #ECF2F9;
-    color: #353535;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 10px;
-    width: 150px;
-    height: 50px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: #ecf2f9;
+  color: #353535;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 2vw;
+  padding: 10px;
+  width: 14vw;
+  height: 5vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .progressControls {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    bottom: 20px;
-    width: calc(100% - 40px); 
-    left: 20px;
-    right: 20px;
+  width: 55vw;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0vw;
 }
-
+.progressStatus {
+  width: 25vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3vw;
+  align-items: center;
+}
+.progressButtons {
+  width: 85vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 .progressControls .input {
-    background: #ECF2F9;
-    border: none;
-    color: #353535;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 20px;
-    padding: 10px;
-    width: 90px;
-    height: 50px;
+  background: #ecf2f9;
+  border: none;
+  color: #353535;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 2vw;
+  padding: 10px;
+  width: 7vw;
+  height: 5vw;
 }
 
 .progressControls .increaseButton,
 .progressControls .decreaseButton {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0;
+  border: none;
+}
+
+.progressControls .increaseButton {
+  color: #ffffff;
+  background-color: #00aae6;
+}
+
+.progressControls .decreaseButton {
+  color: #353535;
+  background-color: #c4c4c4;
+}
+
+.progressControls .saveButton {
+  color: #ffffff;
+  background-color: #00aae6;
+  border: none;
+  text-align: center;
+  font-size: 2vw;
+  border-radius: 20px;
+  width: 13vw;
+  height: 5vw;
+  position: relative;
+  left: 2vw;
+  cursor: pointer;
+}
+.progressIncDec {
+  display: flex;
+  gap: 1vw;
+}
+.userName {
+  font-size: 4.4vw;
+}
+@media (min-width:1250px){
+  .container {
+  width: 750px;
+  height: 625px;
+}
+.selector {
+  font-size: 32px;
+  width: 688px;
+  margin: 25px 0px 0px;
+}
+.description {
+  width: 688px;
+  font-size: 25px;
+  height: 413px;
+}
+.progress {
+  font-size: 25px;
+  width: 175px;
+  height: 63px;
+}
+.progressControls {
+  width: 688px;
+  gap: 0px;
+}
+.progressStatus {
+  width: 313px;
+  gap: 38px;
+}
+.progressButtons {
+  width: 1063px;
+}
+.progressControls .input {
+  font-size: 25px;
+  width: 87.5px;
+  height: 63px;
+}
+
+.progressControls .increaseButton,
+.progressControls .decreaseButton {
+  width: 63px;
+  height: 63px;
+}
+.progressControls .saveButton {
+  font-size: 25px;
+  width: 163px;
+  height: 63px;
+  left: 25px;
+}
+.progressIncDec {
+  gap: 12.5px;
+}
+.userName {
+  font-size: 55px;
+}
+}
+@media (max-width: 500px) {
+  .container {
+    width: 90vw;
+    height: 110vw;
+  }
+  .selector {
+    border-radius: 20px 20px 0px 0px;
+    font-size: 4.4vw;
+    padding: 10px;
+    width: 80vw;
+    margin: 4vw 0px 0px;
+  }
+
+  .description {
+    width: 80vw;
+    font-size: 3.5vw;
+    padding: 15px;
+    height: 55vw;
+    border-radius: 0px 0px 20px 20px;
+    overflow-y: scroll;
+  }
+
+  .progress {
+    border-radius: 20px;
+    font-size: 4.4vw;
+    padding: 10px;
+    width: 35vw;
+    height: 12vw;
+  }
+  .progressControls {
+    width: 85vw;
+    flex-direction: column;
+    gap: 4vw;
+    margin-bottom: 5vw;
+  }
+  .progressStatus {
+    width: 90vw;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .progressButtons {
+    width: 85vw;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .progressControls .input {
+    font-size: 4.4vw;
+    padding: 10px;
+    width: 30vw;
+    height: 12vw;
+  }
+
+  .progressControls .increaseButton,
+  .progressControls .decreaseButton {
     width: 50px;
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
     cursor: pointer;
-    margin: 0;
-    border: none;
-}
-
-.progressControls .increaseButton {
-    color: #FFFFFF;
-    background-color: #00AAE6;
-}
-
-.progressControls .decreaseButton {
-    color: #353535;
-    background-color: #C4C4C4;
-}
-
-.progressControls .saveButton {
-    color: #FFFFFF;
-    background-color: #00AAE6;
-    border: none;
-    text-align: center;
-    font-size: 20px;
+  }
+  .progressControls .saveButton {
+    font-size: 4vw;
     border-radius: 20px;
-    width: 150px;
-    height: 50px;
-    margin-left: auto;
-    cursor: pointer;
+    width: 30vw;
+    height: 12vw;
+    left: 2vw;
+  }
+  .progressIncDec {
+    display: flex;
+    gap: 10vw;
+  }
+  .userName {
+    font-size: 4.4vw;
+  }
 }

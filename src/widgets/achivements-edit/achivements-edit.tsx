@@ -52,8 +52,6 @@ const AchivementsEdit = ({ userName }: AchivementsEditProps) => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.userName}>{userName}</p>
-      <hr />
       <select
         value={currentTask.title}
         onChange={handleChange}
@@ -70,27 +68,33 @@ const AchivementsEdit = ({ userName }: AchivementsEditProps) => {
         <>
           <p className={styles.description}>{currentTask.description}</p>
           <div className={styles.progressControls}>
-            <p className={styles.progress}>
-              Прогресс: {currentTask.currentProgress}
-            </p>
-            <input
-              value={inputValue}
-              onChange={handleInputChange}
-              className={styles.input}
-            />
-            <button
-              className={styles.increaseButton}
-              onClick={increaseProgress}
-            >
-              +
-            </button>
-            <button
-              className={styles.decreaseButton}
-              onClick={decreaseProgress}
-            >
-              -
-            </button>
-            <button className={styles.saveButton}>сохранить</button>
+            <div className={styles.progressStatus}>
+              <p className={styles.progress}>
+                Прогресс: {currentTask.currentProgress}
+              </p>
+              <input
+                value={inputValue}
+                onChange={handleInputChange}
+                className={styles.input}
+              />
+            </div>
+            <div className={styles.progressButtons}>
+              <div className={styles.progressIncDec}>
+                <button
+                  className={styles.increaseButton}
+                  onClick={increaseProgress}
+                >
+                  +
+                </button>
+                <button
+                  className={styles.decreaseButton}
+                  onClick={decreaseProgress}
+                >
+                  -
+                </button>
+              </div>
+              <button className={styles.saveButton}>сохранить</button>
+            </div>
           </div>
         </>
       )}

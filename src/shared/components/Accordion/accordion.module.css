@@ -1,4 +1,3 @@
-
 .accordion {
   max-width: 45.8vw;
   margin: auto;
@@ -19,9 +18,8 @@
 }
 .accordionHeader {
   width: 41.8vw;
-  margin: 0;
   text-align: left;
-  padding: 25px 15px 0px 5px;
+  padding: 25px 15px 15px 5px;
   font-size: 2.57vw;
   font-weight: 600;
   background: none;
@@ -42,7 +40,7 @@
 }
 .link {
   font-size: 1.57vw;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   color: #00aae6;
 }
 .link:hover {
@@ -75,6 +73,24 @@
 }
 .accordionBody.active {
   max-height: fit-content;
+}
+@media (min-width: 1250px) {
+  .accordion {
+    max-width: 572.5px;
+    padding: 0 27px;
+    margin-top: 27px;
+    margin-bottom: 63px;
+  }
+  .accordionHeader {
+    width: 522.5px;
+    font-size: 32px;
+  }
+  .accordionIcon {
+    font-size: 1.2rem;
+  }
+  .link {
+    font-size: 20px;
+  }
 }
 @media (max-width: 500px) {
   .accordion {

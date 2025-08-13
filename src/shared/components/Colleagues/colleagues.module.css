@@ -46,6 +46,30 @@
 .headerAcc {
   font-weight: 600;
   font-size: 2.57vw;
+  margin: 0;
+}
+@media (min-width: 1250px) {
+  .collContainer {
+    right: 50px;
+    width: 535px;
+    height: 125px;
+    padding: 0 37.5px;
+  }
+  .collPhoto {
+    width: 100px;
+    height: 100px;
+  }
+  .collContent {
+    width: 300px;
+    top: 10px;
+    font-size: 20px;
+  }
+  .collContent h3 {
+    font-size: 22px;
+  }
+  .headerAcc {
+    font-size: 33px;
+  }
 }
 @media (max-width: 500px) {
   .collContainer {

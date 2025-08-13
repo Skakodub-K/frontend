@@ -28,6 +28,27 @@
   width: 100%;
   height: 65%;
 }
+@media (min-width: 1250px) {
+  .sectionContainer {
+    width: 573px;
+    height: 330px;
+    margin-top: 26px;
+    margin-bottom: 9px;
+  }
+  .sectionTitle {
+    margin-left: 26px;
+    padding-top: 17.5px;
+    font-size: 32px;
+  }
+  .sectionDescription {
+    margin-left: 26px;
+    font-size: 16px;
+  }
+  .sectionSlider {
+    width: 100%;
+    height: 65%;
+  }
+}
 @media (max-width: 500px) {
   .sectionContainer {
     width: 90vw;

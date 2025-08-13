@@ -11,7 +11,7 @@ body{
   display: flex;
   flex-direction: row;
   gap: 2.78vw;
-  padding: 4.78vw 5.55vw;
+  padding: 4.78vw 4.2vw;
   justify-content: center;
 }
 @media(max-width:500px){

@@ -1,13 +1,11 @@
 .header {
   width: 100%;
-  height: 7vw;
-  padding: 0.5vw 5.5vw;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 4.4vw;
   border-bottom: 2px solid #8593a496;
   background-color: #abb5c057;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header img {
   width: 9vw;
@@ -16,13 +14,40 @@
 .headerLink img {
   border-radius: 50%;
   border: 2px solid black;
-  width: 5.55vw;
-  height: 5.55vw;
+  width: 3.6vw;
+  height: 3.6vw;
+}
+.headerContainer {
+  width: 100vw;
+  padding: 0.5vw 5.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 1250px) {
+  .header {
+    width: 100vw;
+    height: 55px;
+  }
+
+  .headerContainer {
+    width: 1250px;
+    padding: 6px 68.75px;
+  }
+
+  .header img {
+    width: 113px;
+    height: 50px;
+  }
+  .headerLink img {
+    width: 45px;
+    height: 45px;
+  }
 }
 @media (max-width: 500px) {
   .header {
-    padding: 1.5vw 6.5vw;
-    height: 12vw;
+    padding: 1.5vw 0vw;
+    height: 10vw;
   }
   .header img {
     width: 15vw;

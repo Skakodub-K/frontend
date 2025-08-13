@@ -68,7 +68,27 @@
   text-align: center;
   opacity: 0.75;
 }
-
+@media (min-width: 1250px) {
+  .sliderContainer {
+    width: 100%;
+    height: 100%;
+  }
+  .sliderContent {
+    gap: 19px;
+    width: 90.3%;
+    height: 100%;
+  }
+  .sliderItem {
+    width: 163px;
+    height: 200px;
+  }
+  .sliderItem.active {
+    top: 4.4px;
+  }
+  .itemTitle {
+    font-size: 16px;
+  }
+}
 @media (max-width: 500px) {
   .sliderContent {
     gap: 3vw;

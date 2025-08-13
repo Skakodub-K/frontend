@@ -33,12 +33,18 @@ const Header: React.FC<Omit<IItem, "title">> = ({ url }) => {
 
   return (
     <header className={styles.header}>
-      <img className={styles.headerLogo} src="icons/T1Logo.png" alt="logo"></img>
-      <Dropdown menu={{ items }}>
-        <div className={styles.headerLink}>
-          <img src={url} alt="profilPh"></img>
-        </div>
-      </Dropdown>
+      <div className={styles.headerContainer}>
+        <img
+          className={styles.headerLogo}
+          src="icons/T1Logo.png"
+          alt="logo"
+        ></img>
+        <Dropdown menu={{ items }}>
+          <div className={styles.headerLink}>
+            <img src={url} alt="profilPh"></img>
+          </div>
+        </Dropdown>
+      </div>
     </header>
   );
 };

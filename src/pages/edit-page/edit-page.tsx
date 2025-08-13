@@ -19,13 +19,16 @@ const EditPage = () => {
       {isPopupOpen && (
         <div className={styles.overlay}>
           <div className={styles.popupContainer}>
+            <div className={styles.popupHeaderContainer}>
+             <p className={styles.popupHeaderName}>{userName}</p>
+              <button
+                className={styles.closePopupButton}
+                onClick={() => setIsPopupOpen(false)}
+              >
+                <CloseOutlined style={{ opacity: 1 }} />
+              </button>
+            </div>
             <AchivementsEdit userName={userName} />
-            <button
-              className={styles.closePopupButton}
-              onClick={() => setIsPopupOpen(false)}
-            >
-              <CloseOutlined style={{ opacity: 1 }} />
-            </button>
           </div>
         </div>
       )}

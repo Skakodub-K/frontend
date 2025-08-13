@@ -8,38 +8,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .popupContainer {
   position: relative;
   background: white;
-  width: 900px;
-  overflow-y: auto;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 20px;
 }
-
+.popupHeaderContainer {
+  padding: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #8593a496;
+}
+.popupHeaderName {
+  margin: 0;
+  width: 48vw;
+  font-size: 2.57vw;
+}
 .closePopupButton {
-  position: absolute;
-  top: 21px;
-  right: 21px;
   width: 3vw;
   height: 3vw;
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 2.57vw;
   cursor: pointer;
   color: #000;
-  z-index: 1001;
+  z-index: 3;
 }
 .settingsIcon {
   position: relative;
-  font-size: 3vw;
-  left: 7vw;
-  width: 3vw;
-  height: 3vw;
+  left: 8.8vw;
+  font-size: 3.5vw;
 }
-.settingsIcon svg{
-  color:#000;
+.settingsIcon svg {
+  color: #000;
 }
 .settingsIcon:hover {
   animation: rotateIcon 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -53,13 +61,51 @@
     transform: rotate(90deg);
   }
 }
-
-@media (max-width: 500px) {
+@media (min-width: 1250px) {
+  .popupContainer {
+    width: 750px;
+    height: 750px;
+  }
+  .popupHeaderContainer {
+    padding: 25px;
+  }
+  .popupHeaderName {
+    width: 600px;
+    font-size: 32px;
+  }
+  .closePopupButton {
+    width: 38px;
+    height: 38px;
+    font-size: 32px;
+  }
   .settingsIcon {
-    display: none;
+    left: 110px;
+    font-size: 44px;
+  }
+}
+@media (max-width: 500px) {
+  .popupContainer {
+    position: relative;
+    background: white;
+    width: 90vw;
+    height: 110vw;
+  }
+  .popupHeaderContainer {
+    padding: 4vw;
+  }
+  .closePopupButton {
+    width: 7vw;
+    height: 7vw;
+    font-size: 4.4vw;
+  }
+  .settingsIcon {
     position: relative;
     left: 1vw;
-    width: 5vw;
-    height: 5vw;
+    top: -0.5vw;
+    font-size: 4.4vw;
+  }
+  .popupHeaderName {
+    font-size: 4.4vw;
+    width: 75vw;
   }
 }

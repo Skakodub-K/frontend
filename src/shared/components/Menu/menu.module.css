@@ -27,6 +27,14 @@
   width: fit-content;
   color: #16191b;
 }
+@media (min-width: 1250px) {
+  .menuContainer {
+    gap: 35px;
+  }
+  .buttonMenu {
+    font-size: 20px;
+  }
+}
 @media (max-width: 500px) {
   .menuContainer {
     height: 30vw;
