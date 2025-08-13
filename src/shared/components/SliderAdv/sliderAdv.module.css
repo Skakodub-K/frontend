@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1%;
-  width: 85.3%;
+  gap: 1.5vw;
+  width: 90.3%;
   height: 100%;
   position: relative;
 }
@@ -33,8 +33,10 @@
 }
 .sliderItem.active {
   transition: transform 0.3s;
-  transform: scale(1.5);
+  transform: scale(1.6);
   z-index: 2;
+  position: relative;
+  top: 0.35vw;
 }
 .sliderItem.prev {
   transition: transform 0.3s;
@@ -60,7 +62,7 @@
   height: 100%;
 }
 .itemTitle {
-  font-size: 16px;
+  font-size: 1.31vw;
   font-weight: bold;
   color: #292d31;
   text-align: center;
@@ -68,8 +70,18 @@
 }
 
 @media (max-width: 500px) {
+  .sliderContent {
+    gap: 3vw;
+  }
   .sliderItem {
     width: 25vw;
     height: 34vw;
+  }
+  .itemImage {
+    width: 90%;
+    height: 100%;
+  }
+  .itemTitle {
+    font-size: 2.57vw;
   }
 }

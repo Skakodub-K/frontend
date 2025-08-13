@@ -1,7 +1,7 @@
 .header {
   width: 100%;
-  height: 10%;
-  padding: 0.5% 3.5%;
+  height: 7vw;
+  padding: 0.5vw 5.5vw;
   position: relative;
   display: flex;
   align-items: center;
@@ -10,8 +10,8 @@
   background-color: #abb5c057;
 }
 .header img {
-  width: 15%;
-  height: 7%;
+  width: 9vw;
+  height: 4vw;
 }
 .headerLink img {
   border-radius: 50%;
@@ -21,11 +21,12 @@
 }
 @media (max-width: 500px) {
   .header {
-    padding: 1.5% 3.5%;
+    padding: 1.5vw 6.5vw;
+    height: 12vw;
   }
   .header img {
-    width: 20%;
-    height: fit-content;
+    width: 15vw;
+    height: 7vw;
   }
   .headerLink img {
     border: 1px solid black;

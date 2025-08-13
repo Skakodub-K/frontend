@@ -14,7 +14,7 @@ const OpacityImg: React.FC<IOpacityImage> = ({
   children,
   bgColor,
 }) => {
-  const sectors = Array.from({ length: steps }).map((item, index) => {
+  const sectors = Array.from({ length: steps }).map((_ , index) => {
     const opacityValue = Number(index) + 1 <= currentStep ? 0 : 0.8;
     return (
       <div
