@@ -21,8 +21,8 @@ const Menu: React.FC = () => {
   return (
     <div className={styles.menuContainer}>
       <ButtonMenu title="Профиль" path="/" />
-      <ButtonMenu title="Активность" path="/activity" />
       <ButtonMenu title="Достижения" path="/achievements" />
+      <ButtonMenu title="Настройки" path="/admin" />
     </div>
   );
 };

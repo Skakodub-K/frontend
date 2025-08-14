@@ -1,7 +1,7 @@
 import OpacityImg from "../OpacityImg";
 import type { ISliderAdvProps } from "../types";
 import styles from "./achievements.module.css";
-import TestPage from "@/pages/edit-page";
+import EditPage from "@/pages/edit-page";
 import { ArrowRightOutlined } from "@ant-design/icons";
 const Achievements: React.FC<ISliderAdvProps> = ({ items }) => {
   return (
@@ -10,7 +10,7 @@ const Achievements: React.FC<ISliderAdvProps> = ({ items }) => {
         <h3 className={styles.sectionTitle}>
           Достижения &nbsp; <span>{items.length}</span>
         </h3>
-        <TestPage />
+        <EditPage />
         <button className={styles.button}>
           <ArrowRightOutlined style={{ opacity: 1 }} />
         </button>

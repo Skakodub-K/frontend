@@ -5,7 +5,6 @@ import AppLayout from "@/widgets/app-layout";
 import ProfilePage from "@/pages/profile-page";
 import AchievementsPage from "@/pages/achievements-page";
 import ActivityPage from "@/pages/activity-page";
-import TestPage from "@/pages/edit-page";
 
 const Router = () => {
   return (
@@ -16,7 +15,6 @@ const Router = () => {
           <Route path="/activity" element={<ActivityPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />
         </Route>
-          <Route path="/test" element={<TestPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="*" element={<Error404Page />} />
       </Routes>
