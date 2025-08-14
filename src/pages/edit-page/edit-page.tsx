@@ -28,7 +28,7 @@ const EditPage = () => {
                 <CloseOutlined style={{ opacity: 1 }} />
               </button>
             </div>
-            <AchivementsEdit userName={userName} />
+            <AchivementsEdit />
           </div>
         </div>
       )}
