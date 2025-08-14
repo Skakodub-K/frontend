@@ -1,17 +1,20 @@
 .sectionContainer {
   width: 45.8vw;
+  padding: 0.8vw;
   height: auto;
   position: relative;
   margin-top: 2.1vw;
   margin-bottom: 0.7vw;
   border-radius: 20px;
   background-color: white;
+  word-wrap: break-word;
 }
 .sectionTitle {
   margin-left: 2.1vw;
   padding-top: 1.4vw;
   font-size: 2.57vw;
   font-weight: 600;
+  word-wrap: break-word;
 }
 .sectionDescription {
   margin-left: 2.1vw;
@@ -32,6 +35,7 @@
 @media (min-width: 1250px) {
   .sectionContainer {
     width: 573px;
+    padding: 10px;
     margin-top: 26px;
     margin-bottom: 9px;
   }
@@ -54,6 +58,7 @@
   .sectionContainer {
     width: 90vw;
     height: auto;
+    padding: 1.8vw;
     position: relative;
     margin-top: 2.1vw;
     margin-bottom: 2.7vw;

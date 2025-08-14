@@ -99,6 +99,7 @@
 }
 @media (max-width: 500px) {
   .accordion {
+    border-radius: 10px;
     position: relative;
     max-width: 90vw;
     height: 13.5vw;
