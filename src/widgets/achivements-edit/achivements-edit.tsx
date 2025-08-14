@@ -3,11 +3,7 @@ import styles from "./achivements-edit.module.css";
 import { mockTasks } from "@/entities/tasks/model/mock-tasks";
 import type { ITask } from "@/entities/tasks/model/task-model";
 
-interface AchivementsEditProps {
-  userName: string;
-}
-
-const AchivementsEdit = ({ userName }: AchivementsEditProps) => {
+const AchivementsEdit = () => {
   const [tasks, setTasks] = useState<ITask[]>(mockTasks);
   const [currentTask, setCurrentTask] = useState<ITask>(tasks[0]);
   const [inputValue, setInputValue] = useState<number>(1);
